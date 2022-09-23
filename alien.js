@@ -10,7 +10,7 @@ function greyAlien(url){
 }
 
 function npcAlien(x,y){
-    let alienElement = greyAlien('character/2d-Game-Alien-Character-Free-Sprite/alien/PNG/alien_armor/armor__0035_fire_1.png')
+    let alienElement = greyAlien('https://github.com/Rollsroyce95/milestone-project-/blob/abed1e5bc21ffbc4a85dc9d11d85f27188075dd0/alien_armor/armor__0038_fire_4.png')
     alienElement.height = 300;
     alienElement.style.zIndex = -1;
 
@@ -51,61 +51,61 @@ function npcAlien(x,y){
 
     async function flyWest(time){
         direction = "west"
-        alienElement.src = "character/2d-Game-Alien-Character-Free-Sprite/alien/PNG/alien_armor/armor__0035_fire_1.png"
+        alienElement.src = "https://github.com/Rollsroyce95/milestone-project-/blob/abed1e5bc21ffbc4a85dc9d11d85f27188075dd0/alien_armor/armor__0035_fire_1.png"
         await sleep(time)
         stop()
     }
     async function flyEast(time){
         direction = "east"
-        alienElement.src = "character/2d-Game-Alien-Character-Free-Sprite/alien/PNG/alien_armor/armor__0035_fire_1.png"
+        alienElement.src = "https://github.com/Rollsroyce95/milestone-project-/blob/abed1e5bc21ffbc4a85dc9d11d85f27188075dd0/alien_armor/armor__0035_fire_1.png"
         await sleep(time)
         stop()
     }
     async function flySouth1(time){
         direction = "south1"
-        alienElement.src = "character/2d-Game-Alien-Character-Free-Sprite/alien/PNG/alien_armor/armor__0035_fire_1.png"
+        alienElement.src = "https://github.com/Rollsroyce95/milestone-project-/blob/abed1e5bc21ffbc4a85dc9d11d85f27188075dd0/alien_armor/armor__0035_fire_1.png"
         alienElement.style.transform = "ScaleX(-1)"
         await sleep(time)
         stop()
     }
     async function flySouth2(time){
         direction = "south2"
-        alienElement.src = "character/2d-Game-Alien-Character-Free-Sprite/alien/PNG/alien_armor/armor__0036_fire_2.png"
+        alienElement.src = "https://github.com/Rollsroyce95/milestone-project-/blob/abed1e5bc21ffbc4a85dc9d11d85f27188075dd0/alien_armor/armor__0036_fire_2.png"
         alienElement.style.transform = "ScaleX(-1)"
         await sleep(time)
         stop()
     }
     async function flySouth3(time){
         direction = "south3"
-        alienElement.src = "character/2d-Game-Alien-Character-Free-Sprite/alien/PNG/alien_armor/armor__0037_fire_3.png"
+        alienElement.src = "https://github.com/Rollsroyce95/milestone-project-/blob/abed1e5bc21ffbc4a85dc9d11d85f27188075dd0/alien_armor/armor__0037_fire_3.png"
         alienElement.style.transform = "ScaleX(-1)"
         await sleep(time)
         stop()
     }
     async function flySouth4(time){
         direction = "south4"
-        alienElement.src = "character/2d-Game-Alien-Character-Free-Sprite/alien/PNG/alien_armor/armor__0038_fire_4.png"
+        alienElement.src = "https://github.com/Rollsroyce95/milestone-project-/blob/abed1e5bc21ffbc4a85dc9d11d85f27188075dd0/alien_armor/armor__0038_fire_4.png"
         alienElement.style.transform = "ScaleX(-1)"
         await sleep(time)
         stop()
     }
     async function flySouth5(time){
         direction = "south5"
-        alienElement.src = "character/2d-Game-Alien-Character-Free-Sprite/alien/PNG/alien_armor/armor__0039_fire_5.png"
+        alienElement.src = "https://github.com/Rollsroyce95/milestone-project-/blob/abed1e5bc21ffbc4a85dc9d11d85f27188075dd0/alien_armor/armor__0039_fire_5.png"
         alienElement.style.transform = "ScaleX(-1)"
         await sleep(time)
         stop()
     }
     async function flyNorth(time){
         direction = "north"
-        alienElement.src = "character/2d-Game-Alien-Character-Free-Sprite/alien/PNG/alien_armor/armor__0035_fire_1.png"
+        alienElement.src = "https://github.com/Rollsroyce95/milestone-project-/blob/abed1e5bc21ffbc4a85dc9d11d85f27188075dd0/alien_armor/armor__0035_fire_1.png"
         alienElement.style.transform = "ScaleX(1)"
         await sleep(time)
         stop()
     }
     function stop(){
         direction = null
-        alienElement.src = "character/2d-Game-Alien-Character-Free-Sprite/alien/PNG/alien_armor/armor__0039_fire_5.png"
+        alienElement.src = "https://github.com/Rollsroyce95/milestone-project-/blob/abed1e5bc21ffbc4a85dc9d11d85f27188075dd0/alien_armor/armor__0039_fire_5.png"
     }
 
     return{
