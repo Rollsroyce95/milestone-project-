@@ -7,7 +7,7 @@ function predatorBegins(url){
 }
 
 function npcPredator(x,y){
-    let predatorElement = predatorBegins('https://github.com/Rollsroyce95/milestone-project-/blob/7c01d5c4e5a1e16cf9265907747439802dd77c13/alien_predator_mask/predatormask__0001_idle_2.png')
+    let predatorElement = predatorBegins('alien_predator_mask/predatormask__0001_idle_2.png')
     predatorElement.height = 250;
     predatorElement.style.zIndex = 1;
 
