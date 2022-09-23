@@ -7,7 +7,7 @@ function predatorBegins(url){
 }
 
 function npcPredator(x,y){
-    let predatorElement = predatorBegins('alien_predator_mask/predatormask__0001_idle_2.png')
+    let predatorElement = predatorBegins('https://github.com/Rollsroyce95/milestone-project-/blob/7c01d5c4e5a1e16cf9265907747439802dd77c13/alien_predator_mask/predatormask__0001_idle_2.png')
     predatorElement.height = 250;
     predatorElement.style.zIndex = 1;
 
@@ -74,97 +74,97 @@ function movePredator(){
 
 async function moveWest(time){
         direction = "west"
-        predatorElement.src = "alien_predator_mask/predatormask__0012_run_1.png"
+        predatorElement.src = "https://github.com/Rollsroyce95/milestone-project-/blob/7c01d5c4e5a1e16cf9265907747439802dd77c13/alien_predator_mask/predatormask__0012_run_1.png"
         await sleep(time)
         stop()
     }
 async function moveEast1(time){
     direction = "east1"
-    predatorElement.src = "alien_predator_mask/predatormask__0012_run_1.png"
+    predatorElement.src = "https://github.com/Rollsroyce95/milestone-project-/blob/7c01d5c4e5a1e16cf9265907747439802dd77c13/alien_predator_mask/predatormask__0012_run_1.png"
     await sleep(time)
     stop()
 }
 async function moveEast2(time){
     direction = "east2"
-    predatorElement.src = "alien_predator_mask/predatormask__0013_run_2.png"
+    predatorElement.src = "https://github.com/Rollsroyce95/milestone-project-/blob/7c01d5c4e5a1e16cf9265907747439802dd77c13/alien_predator_mask/predatormask__0013_run_2.png"
     await sleep (time)
     stop()
 }
 async function moveEast3(time){
     direction = "east3"
-    predatorElement.src = "alien_predator_mask/predatormask__0014_run_3.png"
+    predatorElement.src = "https://github.com/Rollsroyce95/milestone-project-/blob/7c01d5c4e5a1e16cf9265907747439802dd77c13/alien_predator_mask/predatormask__0014_run_3.png"
     await sleep (time)
     stop()
 }
 async function moveEast4(time){
     direction = "east4"
-    predatorElement.src = "alien_predator_mask/predatormask__0015_run_4.png"
+    predatorElement.src = "https://github.com/Rollsroyce95/milestone-project-/blob/7c01d5c4e5a1e16cf9265907747439802dd77c13/alien_predator_mask/predatormask__0015_run_4.png"
     await sleep (time)
     stop()
 }
 async function moveEast5(time){
     direction = "east5"
-    predatorElement.src = "alien_predator_mask/predatormask__0016_run_5.png"
+    predatorElement.src = "https://github.com/Rollsroyce95/milestone-project-/blob/7c01d5c4e5a1e16cf9265907747439802dd77c13/alien_predator_mask/predatormask__0016_run_5.png"
     await sleep (time)
     stop()
 }
 async function moveEast6(time){
     direction = "east6"
-    predatorElement.src = "alien_predator_mask/predatormask__0017_run_6.png"
+    predatorElement.src = "https://github.com/Rollsroyce95/milestone-project-/blob/7c01d5c4e5a1e16cf9265907747439802dd77c13/alien_predator_mask/predatormask__0017_run_6.png"
     await sleep (time)
     stop()
 }
 async function moveEast7(time){
     direction = "east7"
-    predatorElement.src = "alien_predator_mask/predatormask__0017_run_6.png"
+    predatorElement.src = "https://github.com/Rollsroyce95/milestone-project-/blob/7c01d5c4e5a1e16cf9265907747439802dd77c13/alien_predator_mask/predatormask__0017_run_6.png"
     await sleep (time)
     stop()
 }
 async function moveNorth1(time){
     direction = "north1"
-    predatorElement.src = "alien_predator_mask/predatormask__0022_dead_1.png"
+    predatorElement.src = "https://github.com/Rollsroyce95/milestone-project-/blob/7c01d5c4e5a1e16cf9265907747439802dd77c13/alien_predator_mask/predatormask__0022_dead_1.png"
     await sleep(time)
     stop()
 }
 async function moveNorth2(time){
     direction = "north2"
-    predatorElement.src = "alien_predator_mask/predatormask__0023_dead_2.png"
+    predatorElement.src = "https://github.com/Rollsroyce95/milestone-project-/blob/7c01d5c4e5a1e16cf9265907747439802dd77c13/alien_predator_mask/predatormask__0023_dead_2.png"
     await sleep(time)
     stop()
 }
 async function moveNorth3(time){
     direction = "north3"
-    predatorElement.src = "alien_predator_mask/predatormask__0024_dead_3.png"
+    predatorElement.src = "https://github.com/Rollsroyce95/milestone-project-/blob/7c01d5c4e5a1e16cf9265907747439802dd77c13/alien_predator_mask/predatormask__0024_dead_3.png"
     await sleep(time)
     stop()
 }
 async function moveNorth4(time){
     direction = "north4"
-    predatorElement.src = "alien_predator_mask/predatormask__0025_dead_4.png"
+    predatorElement.src = "https://github.com/Rollsroyce95/milestone-project-/blob/7c01d5c4e5a1e16cf9265907747439802dd77c13/alien_predator_mask/predatormask__0025_dead_4.png"
     await sleep(time)
     stop()
 }
 async function moveNorth5(time){
     direction = "north5"
-    predatorElement.src = "alien_predator_mask/predatormask__0026_dead_5.png"
+    predatorElement.src = "https://github.com/Rollsroyce95/milestone-project-/blob/7c01d5c4e5a1e16cf9265907747439802dd77c13/alien_predator_mask/predatormask__0026_dead_5.png"
     await sleep(time)
     stop()
 }
 async function moveNorthEast(time){
     direction = "northEast"
-    predatorElement.src = "alien_predator_mask/predatormask__0022_dead_1.png"
+    predatorElement.src = "https://github.com/Rollsroyce95/milestone-project-/blob/7c01d5c4e5a1e16cf9265907747439802dd77c13/alien_predator_mask/predatormask__0022_dead_1.png"
     await sleep(time)
     stop()
 }
 async function moveSouth(time){
     direction = "south"
-    predatorElement.src = "alien_predator_mask/predatormask__0001_idle_2.png"
+    predatorElement.src = "https://github.com/Rollsroyce95/milestone-project-/blob/7c01d5c4e5a1e16cf9265907747439802dd77c13/alien_predator_mask/predatormask__0001_idle_2.pngg"
     await sleep(time)
     stop()
 }
 function stop(){
     direction = null
-    predatorElement.src = "alien_predator_mask/predatormask__0001_idle_2.png"
+    predatorElement.src = "https://github.com/Rollsroyce95/milestone-project-/blob/7c01d5c4e5a1e16cf9265907747439802dd77c13/alien_predator_mask/predatormask__0001_idle_2.png"
 }
 
 return {
