@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ALien vs. Predator : Abduction</title>
+    <link rel="stylesheet" type="text/css" href="main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Creepster&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <img
+      src="character\3d39_pwjq_180330 (2).jpg"
+      id="space"
+      attribute="https://www.vecteezy.com/free-vector/web"
+    />"/>
+    <h1>Alien vs. Predator</h1>
+    <h2>Abduction</h2>
+    <div id="gameBegin">
+      <h2 id="gameIntro">Solve These Questions to Return Predator Home</h2>
+      <button id="hideButton" onclick="start()">Start</button>
+    </div>
+
+    <div id="quiz">
+      <h3 id="questions"></h3>
+      <div id="optionA" onclick="option1()"></div>
+      <div id="optionB" onclick="option2()"></div>
+      <div id="optionC" onclick="option3()"></div>
+      <div id="optionD" onclick="option4()"></div>
+      <button onclick="submit1()" id="submit1">Submit1</button>
+      <button onclick="submit2()" id="submit2">Submit2</button>
+      <button onclick="submit3()" id="submit3">Submit3</button>
+      <button onclick="submit4()" id="submit4">Submit4</button>
+      <button onclick="submit5()" id="submit5">Submit5</button>
+    </div>
+
+    <script src="./Intro.js"></script>
+    <script src="./predator.js"></script>
+    <script src="./ufo.js"></script>
+    <script src="./alien.js"></script>
+  </body>
+</html>

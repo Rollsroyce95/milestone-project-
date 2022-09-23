@@ -1,3 +1,4 @@
+
 let startGame = document.querySelector("gameBegin");
 let startGaming = document.getElementById("gameBegin")
 let hideButton= document.getElementById("hideButton");
