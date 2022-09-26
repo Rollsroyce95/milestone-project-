@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>ALien vs. Predator : Abduction</title>
     <link rel="stylesheet" type="text/css" href="main.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -14,15 +14,36 @@
     />
   </head>
   <body>
-    <img src="3d39_pwjq_180330 (2).jpg" id="space"  attribute="https://www.vecteezy.com/free-vector/web">"/>
-    <h1 id="title">Alien vs. Predator</h1>
-    <h2 id="belowTitle">Abduction</h2>
-    <form>
-      <a href="entergame.html" class="button">Start</a>
-    </form>
-    <img id="floating"src="alien_predator_mask/predatormask__0029_jump_3.png"/>
-    <img id="abducting"src="https://opengameart.org/sites/default/files/spaceship_2.png"/>
-    <img id="abductingTwo"src="https://opengameart.org/sites/default/files/spaceship_2.png"/>
-    <img id="alien_armor/armor__0039_fire_5.png"/>
+    <img
+      src="character\3d39_pwjq_180330 (2).jpg"
+      id="space"
+      attribute="https://www.vecteezy.com/free-vector/web"
+    />
+    <h1 id="gameTitle">Alien vs. Predator</h1>
+    <h2 id="gameSubTitle">Abduction</h2>
+    <div id="gameBegin">
+      <h2 id="gameIntro">Solve These Questions to Return Predator Home</h2>
+      <button id="hideButton" onclick="start()">Start</button>
+    </div>
+
+    <div class="quiz">
+      <h3 id="questions"></h3>
+      <div id="optionA" onclick="option1()"></div>
+      <div id="optionB" onclick="option2()"></div>
+      <div id="optionC" onclick="option3()"></div>
+      <div id="optionD" onclick="option4()"></div>
+    </div>
+    <div class="submitButtons">
+      <button onclick="submit1()" id="submit1">Submit</button>
+      <button onclick="submit2()" id="submit2">Submit</button>
+      <button onclick="submit3()" id="submit3">Submit</button>
+      <button onclick="submit4()" id="submit4">Submit</button>
+      <button onclick="submit5()" id="submit5">Submit</button>
+    </div>
+
+    <script src="./Intro.js"></script>
+    <script src="./predator.js"></script>
+    <script src="./ufo.js"></script>
+    <script src="./alien.js"></script>
   </body>
 </html>
