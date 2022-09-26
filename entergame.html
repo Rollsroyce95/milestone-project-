@@ -15,28 +15,30 @@
   </head>
   <body>
     <img
-      src="https://github.com/Rollsroyce95/milestone-project-/blob/26ce9639727ab82b5ac032636bdc62a4ab0941a8/3d39_pwjq_180330%20(2).jpg"
+      src="character\3d39_pwjq_180330 (2).jpg"
       id="space"
       attribute="https://www.vecteezy.com/free-vector/web"
-    />"/>
-    <h1>Alien vs. Predator</h1>
-    <h2>Abduction</h2>
+    />
+    <h1 id="gameTitle">Alien vs. Predator</h1>
+    <h2 id="gameSubTitle">Abduction</h2>
     <div id="gameBegin">
       <h2 id="gameIntro">Solve These Questions to Return Predator Home</h2>
       <button id="hideButton" onclick="start()">Start</button>
     </div>
 
-    <div id="quiz">
+    <div class="quiz">
       <h3 id="questions"></h3>
       <div id="optionA" onclick="option1()"></div>
       <div id="optionB" onclick="option2()"></div>
       <div id="optionC" onclick="option3()"></div>
       <div id="optionD" onclick="option4()"></div>
-      <button onclick="submit1()" id="submit1">Submit1</button>
-      <button onclick="submit2()" id="submit2">Submit2</button>
-      <button onclick="submit3()" id="submit3">Submit3</button>
-      <button onclick="submit4()" id="submit4">Submit4</button>
-      <button onclick="submit5()" id="submit5">Submit5</button>
+    </div>
+    <div class="submitButtons">
+      <button onclick="submit1()" id="submit1">Submit</button>
+      <button onclick="submit2()" id="submit2">Submit</button>
+      <button onclick="submit3()" id="submit3">Submit</button>
+      <button onclick="submit4()" id="submit4">Submit</button>
+      <button onclick="submit5()" id="submit5">Submit</button>
     </div>
 
     <script src="./Intro.js"></script>
