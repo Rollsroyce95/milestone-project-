@@ -3,7 +3,7 @@ let startGame = document.querySelector("gameBegin");
 let startGaming = document.getElementById("gameBegin")
 let hideButton= document.getElementById("hideButton");
 let gameIntro = document.getElementById("gameIntro");
-let quiz= document.querySelector("#quiz");
+let quiz= document.querySelector(".quiz");
 let questions = document.querySelector("#questions");
 let submitQ1 = document.querySelector("#submit1");
 let submitQ2 = document.querySelector("#submit2");
@@ -46,33 +46,33 @@ const questionList =[
    let answer5 = ["lenticular", "spiral", "elliptical", "irregular"]
 
 function option1(){
-   optionA.style.color = "rgb(1, 170, 1)";
-   optionB.style.color = "white";
-   optionC.style.color = "white";
-   optionD.style.color = "white";
+   optionA.style.color = "rgb(153, 0, 255)";
+   optionB.style.color = "rgb(0, 102, 255)";
+   optionC.style.color = "rgb(0, 102, 255)";
+   optionD.style.color = "rgb(0, 102, 255)";
    qnChoice = "a";
 
 }   
 function option2(){
-   optionA.style.color = "white";
-   optionB.style.color = "rgb(1, 170, 1)";
-   optionC.style.color = "white";
-   optionD.style.color = "white";
+   optionA.style.color = "rgb(0, 102, 255)";
+   optionB.style.color = "rgb(153, 0, 255)";
+   optionC.style.color = "rgb(0, 102, 255)";
+   optionD.style.color = "rgb(0, 102, 255)";
    qnChoice = "b";
 
 }
 function option3(){
-   optionA.style.color = "white";
-   optionB.style.color = "white";
-   optionC.style.color = "rgb(1, 170, 1)";
-   optionD.style.color = "white";
+   optionA.style.color = "rgb(0, 102, 255)";
+   optionB.style.color = "rgb(0, 102, 255)";
+   optionC.style.color = "rgb(153, 0, 255)";
+   optionD.style.color = "rgb(0, 102, 255)";
    qnChoice = "c";
 }   
 function option4(){
-   optionA.style.color = "white";
-   optionB.style.color = "white";
-   optionC.style.color = "white";
-   optionD.style.color = "rgb(1, 170, 1)";
+   optionA.style.color = "rgb(0, 102, 255)";
+   optionB.style.color = "rgb(0, 102, 255)";
+   optionC.style.color = "rgb(0, 102, 255)";
+   optionD.style.color = "rgb(153, 0, 255)";
    qnChoice = "d";
 
 }
@@ -110,10 +110,10 @@ function submit1(){
    optionB.innerHTML = answer2[1];
    optionC.innerHTML = answer2[2];
    optionD.innerHTML = answer2[3];
-   optionA.style.color = "white";
-   optionB.style.color = "white";
-   optionC.style.color = "white";
-   optionD.style.color = "white";
+   optionA.style.color = "rgb(0, 102, 255)";
+   optionB.style.color = "rgb(0, 102, 255)";
+   optionC.style.color = "rgb(0, 102, 255)";
+   optionD.style.color = "rgb(0, 102, 255)";
 }
 
 function submit2(){
@@ -128,10 +128,10 @@ function submit2(){
    optionB.innerHTML = answer3[1];
    optionC.innerHTML = answer3[2];
    optionD.innerHTML = answer3[3];
-   optionA.style.color = "white";
-   optionB.style.color = "white";
-   optionC.style.color = "white";
-   optionD.style.color = "white";
+   optionA.style.color = "rgb(0, 102, 255)";
+   optionB.style.color = "rgb(0, 102, 255)";
+   optionC.style.color = "rgb(0, 102, 255)";
+   optionD.style.color = "rgb(0, 102, 255)";
  
 }
 
@@ -147,10 +147,10 @@ function submit3(){
    optionB.innerHTML = answer4[1];
    optionC.innerHTML = answer4[2];
    optionD.innerHTML = answer4[3];
-   optionA.style.color = "white";
-   optionB.style.color = "white";
-   optionC.style.color = "white";
-   optionD.style.color = "white";
+   optionA.style.color = "rgb(0, 102, 255)";
+   optionB.style.color = "rgb(0, 102, 255)";
+   optionC.style.color = "rgb(0, 102, 255)";
+   optionD.style.color = "rgb(0, 102, 255)";
  
 }
 function submit4(){
@@ -165,10 +165,10 @@ function submit4(){
    optionB.innerHTML = answer5[1];
    optionC.innerHTML = answer5[2];
    optionD.innerHTML = answer5[3];
-   optionA.style.color = "white";
-   optionB.style.color = "white";
-   optionC.style.color = "white";
-   optionD.style.color = "white";
+   optionA.style.color = "rgb(0, 102, 255)";
+   optionB.style.color = "rgb(0, 102, 255)";
+   optionC.style.color = "rgb(0, 102, 255)";
+   optionD.style.color = "rgb(0, 102, 255)";
   
 }
 
@@ -186,9 +186,10 @@ function submit5(){
    if (points >= 4){
       gameIntro.innerHTML= "Winner";
       gameIntro.style.color = "green"; 
-
+      gameIntro.style.fontSize = "200px;"
+      submitQ5.style.display ="none";
          setTimeout(async function readyPredatorOne()
-            {await predatorInMotion.moveWest (470);},0);
+            {await predatorInMotion.moveWest (200);},0);
 
          setTimeout(async function readyPredatorOne()
             {await predatorInMotion.moveSouth (670);},1000);
@@ -197,7 +198,7 @@ function submit5(){
             {await alienInMotion.flyNorth (1080);},0);
 
          setTimeout(async function readyAlienOne()
-            {await alienInMotion.flyWest (250);},1200);
+            {await alienInMotion.flyWest (50);},1200);
 
          setTimeout(async function readyAlienOne()
             {await alienInMotion.flyEast (800);},2000);
@@ -208,7 +209,8 @@ function submit5(){
    if (points <= 3){
       gameIntro.innerHTML= "Loser";
       gameIntro.style.color = "red";
-        
+      gameIntro.style.fontSize = "200px"
+      submitQ5.style.display ="none"; 
          setTimeout(async function readyAlienOne()
             {await alienInMotion.flyNorth (1080);},0);
 
@@ -226,14 +228,11 @@ function submit5(){
         
    }
 
-   quiz.style.display= "none";
-   gameBegin.style.display = "block";
-   gameIntro.style.display= "block";
-   hideButton.style.display = "none";
-   optionA.style.color = "white";
-   optionB.style.color = "white";
-   optionC.style.color = "white";
-   optionD.style.color = "white";
+      quiz.style.display= "none";
+      gameBegin.style.display = "block";
+      gameIntro.style.display= "block";
+      hideButton.style.display = "none";
+
 
 }
 
