@@ -6,7 +6,7 @@
 function alienShip(url){
     let ship = document.createElement('img')
     ship.src = url
-    ship.style.position = 'absolute'
+    ship.style.position = 'fixed'
     document.body.append(ship)
     return ship
 }
@@ -54,6 +54,6 @@ function sleep(time){
 }
 
 async function readyShipOne(){
-    await shipInMotion.flyEast(2000)
+    await shipInMotion.flyEast(2200)
 }
     readyShipOne()
