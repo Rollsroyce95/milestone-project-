@@ -186,7 +186,7 @@ function submit5(){
    if (points >= 4){
       gameIntro.innerHTML= "Winner";
       gameIntro.style.color = "green"; 
-      gameIntro.style.fontSize = "200px;"
+      gameIntro.style.fontSize = "200px"
       submitQ5.style.display ="none";
          setTimeout(async function readyPredatorOne()
             {await predatorInMotion.moveWest (200);},0);
