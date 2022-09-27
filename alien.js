@@ -128,7 +128,7 @@ function sleep(time){
 }
 
 async function readyAlienOne(){
-    await alienInMotion.flyEast(2300);
+    await alienInMotion.flyEast(2250);
     await alienInMotion.flySouth1(452);
     await alienInMotion.flySouth2(50);
     await alienInMotion.flySouth3(50);
