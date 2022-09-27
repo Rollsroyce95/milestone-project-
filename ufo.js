@@ -1,6 +1,6 @@
 
 
-  shipInMotion = npcShip(-750,565)
+  shipInMotion = npcShip(-750,450)
 //attribution:"https://opengameart.org/users/alucard"
 
 function alienShip(url){
@@ -13,7 +13,7 @@ function alienShip(url){
 
 function npcShip(x,y){
     let shipElement = alienShip('https://raw.githubusercontent.com/Rollsroyce95/milestone-project-/main/%E2%80%94Pngtree%E2%80%94ufo_7077225.png')
-    shipElement.height = 900;
+    shipElement.height = 950;
     shipElement.style.zIndex = 1;
    
   
