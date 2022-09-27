@@ -1,5 +1,5 @@
 
-const alienInMotion = npcAlien(-460,930)
+const alienInMotion = npcAlien(-400,950)
 
 function greyAlien(url){
     let grey = document.createElement('img')
@@ -129,7 +129,7 @@ function sleep(time){
 
 async function readyAlienOne(){
     await alienInMotion.flyEast(2200);
-    await alienInMotion.flySouth1(500);
+    await alienInMotion.flySouth1(452);
     await alienInMotion.flySouth2(50);
     await alienInMotion.flySouth3(50);
     await alienInMotion.flySouth4(50);
