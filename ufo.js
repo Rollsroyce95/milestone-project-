@@ -12,7 +12,7 @@ function alienShip(url){
 }
 
 function npcShip(x,y){
-    let shipElement = alienShip('https://opengameart.org/sites/default/files/spaceship_2.png')
+    let shipElement = alienShip('https://raw.githubusercontent.com/Rollsroyce95/milestone-project-/main/oozr_fe7r_210520.jpg')
     shipElement.height = 700;
     shipElement.style.zIndex = 1;
    
@@ -32,13 +32,13 @@ function npcShip(x,y){
 
     async function flyEast(time){
         direction = "east"
-        shipElement.src = "https://opengameart.org/sites/default/files/spaceship_2.png"
+        shipElement.src = "https://raw.githubusercontent.com/Rollsroyce95/milestone-project-/main/oozr_fe7r_210520.jpgg"
         await sleep(time)
         stop()
     }
     function stop(){
         direction = null
-        shipElement.src = "https://opengameart.org/sites/default/files/spaceship_2.png"
+        shipElement.src = "https://raw.githubusercontent.com/Rollsroyce95/milestone-project-/main/oozr_fe7r_210520.jpg"
     }
 
     return{
