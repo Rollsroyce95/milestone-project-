@@ -231,8 +231,10 @@ button:hover{
 
 }
 h5{
-    color:white;
+    color:rgb(255,255,255);
     margin-top:600px;
+     z-index:-1;
+    
 }
 
 
