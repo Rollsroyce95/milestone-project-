@@ -12,7 +12,7 @@ function alienShip(url){
 }
 
 function npcShip(x,y){
-    let shipElement = alienShip('https://raw.githubusercontent.com/Rollsroyce95/milestone-project-/main/oozr_fe7r_210520.jpg')
+    let shipElement = alienShip('https://raw.githubusercontent.com/Rollsroyce95/milestone-project-/main/%E2%80%94Pngtree%E2%80%94ufo_7077225.png')
     shipElement.height = 700;
     shipElement.style.zIndex = 1;
    
@@ -32,13 +32,13 @@ function npcShip(x,y){
 
     async function flyEast(time){
         direction = "east"
-        shipElement.src = "https://raw.githubusercontent.com/Rollsroyce95/milestone-project-/main/oozr_fe7r_210520.jpgg"
+        shipElement.src = "https://raw.githubusercontent.com/Rollsroyce95/milestone-project-/main/%E2%80%94Pngtree%E2%80%94ufo_7077225.png"
         await sleep(time)
         stop()
     }
     function stop(){
         direction = null
-        shipElement.src = "https://raw.githubusercontent.com/Rollsroyce95/milestone-project-/main/oozr_fe7r_210520.jpg"
+        shipElement.src = "https://raw.githubusercontent.com/Rollsroyce95/milestone-project-/main/%E2%80%94Pngtree%E2%80%94ufo_7077225.png"
     }
 
     return{
