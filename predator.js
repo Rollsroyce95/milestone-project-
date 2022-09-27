@@ -199,7 +199,7 @@ function sleep(time){
 const predatorInMotion = npcPredator(-200,230)
 
 async function readyPredatorOne(){
-    await predatorInMotion.moveEast1(100)
+   await predatorInMotion.moveEast1(100)
     await predatorInMotion.moveEast2(100)
     await predatorInMotion.moveEast3(100)
     await predatorInMotion.moveEast4(100)
@@ -230,10 +230,10 @@ async function readyPredatorOne(){
     await predatorInMotion.moveEast5(100)
     await predatorInMotion.moveEast6(100)
     await predatorInMotion.moveEast1(100)
-    await predatorInMotion.moveEast2(100)
-     await predatorInMotion.moveEast3(100)
-    await predatorInMotion.moveEast4(50)
-    await predatorInMotion.moveNorthEast(610)
+    await predatorInMotion.moveEast2(170)
+    await predatorInMotion.moveEast3(200)
+    await predatorInMotion.moveNorthEast(615)
+    await predatorInMotion.moveNorth1(0)
    
 }
     readyPredatorOne()
