@@ -1,6 +1,6 @@
 
 
-  shipInMotion = npcShip(-750,595)
+  shipInMotion = npcShip(-750,565)
 //attribution:"https://opengameart.org/users/alucard"
 
 function alienShip(url){
