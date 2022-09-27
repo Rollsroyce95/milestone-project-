@@ -1,5 +1,5 @@
 
-const alienInMotion = npcAlien(-460,1000)
+const alienInMotion = npcAlien(-460,970)
 
 function greyAlien(url){
     let grey = document.createElement('img')
