@@ -1,4 +1,4 @@
-const predatorInMotion = npcPredator(-300,-900)
+const predatorInMotion = npcPredator(-300,-790)
 
 function predatorBegins(url){
     let prey = document.createElement('img')
