@@ -18,11 +18,8 @@ let qnChoice = "";
 let points = 0;
 let winner= 4-5;
 let looser = 0-3;
-
-
-
-
 let arrayNumber = 0 ;
+
 quiz.style.display= "none";
 submitQ1.style.display = "none";
 submitQ2.style.display = "none";
@@ -82,7 +79,7 @@ setTimeout(function beginGame(){
 
 
  setTimeout(function beginGame(){
- (startGaming.style.display ="block");},4400);
+ (startGaming.style.display ="block");},2750);
 
 
 function start(){
@@ -184,47 +181,45 @@ function submit5(){
    optionD.innerHTML = answer5[3];
    gameIntro.innerHTML=  points;
    if (points >= 4){
-      gameIntro.innerHTML= "Winner";
+      gameIntro.innerHTML= "You Win!";
       gameIntro.style.color = "green"; 
       gameIntro.style.fontSize = "200px"
+      gameIntro.style.marginLeft ='500px'
       submitQ5.style.display ="none";
-         setTimeout(async function readyPredatorOne()
-            {await predatorInMotion.moveWest (200);},0);
 
          setTimeout(async function readyPredatorOne()
-            {await predatorInMotion.moveSouth (670);},1000);
+            {await predatorInMotion.moveSouth (460);},1000);
 
          setTimeout(async function readyAlienOne()
-            {await alienInMotion.flyNorth (1080);},0);
+            {await alienInMotion.flyNorth (670);},0);
 
          setTimeout(async function readyAlienOne()
-            {await alienInMotion.flyWest (50);},1200);
-
-         setTimeout(async function readyAlienOne()
-            {await alienInMotion.flyEast (800);},2000);
+            {await alienInMotion.flyNorth2 (800);},2000);
 
          setTimeout(async function readyShipOne()
-            {await shipInMotion.flyEast (800);},2000);
+            {await shipInMotion.flyNorth (800);},2000);
    }
    if (points <= 3){
-      gameIntro.innerHTML= "Loser";
+      gameIntro.innerHTML= "You Lose!";
       gameIntro.style.color = "red";
       gameIntro.style.fontSize = "200px"
+      gameIntro.style.marginLeft ='500px'
       submitQ5.style.display ="none"; 
          setTimeout(async function readyAlienOne()
-            {await alienInMotion.flyNorth (1080);},0);
+            {await alienInMotion.flyNorth (665);},0);
 
          setTimeout(async function readyPredatorOne()
-            {await predatorInMotion.moveWest (300);},500);
+            {await predatorInMotion.moveWest (100);},500);
 
          setTimeout(async function readyAlienOne()
-            {await alienInMotion.flyEast (800);},2000);
+            {await alienInMotion.flyNorth2 (500);},2000);
 
          setTimeout(async function readyShipOne()
-            {await shipInMotion.flyEast (800);},2000);
+            {await shipInMotion.flyNorth (500);},1990);
+            
 
          setTimeout(async function readyPredatorOne()
-            {await predatorInMotion.moveEast7 (800);},2000);
+            {await predatorInMotion.moveNorth6 (500);},2000);
         
    }
 
@@ -232,6 +227,7 @@ function submit5(){
       gameBegin.style.display = "block";
       gameIntro.style.display= "block";
       hideButton.style.display = "none";
+
 
 
 }
