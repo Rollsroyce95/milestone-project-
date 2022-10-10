@@ -15,7 +15,6 @@ function alienShip(url){
 
 function npcShip(x,y){
     let shipElement = alienShip('https://github.com/Rollsroyce95/milestone-project-/blob/b1ca3771237d99d87769199dad4250b5aad04acc/%E2%80%94Pngtree%E2%80%94ufo_7077225.png')
-    
     shipElement.height = 800;
     shipElement.style.zIndex = 1;
     
@@ -41,19 +40,19 @@ function npcShip(x,y){
 
     async function flyEast(time){
         direction = "east"
-       let shipElement = alienShip('https://raw.githubusercontent.com/Rollsroyce95/milestone-project-/main/%E2%80%94Pngtree%E2%80%94ufo_7077225.png')
+    let shipElement = alienShip('https://github.com/Rollsroyce95/milestone-project-/blob/b1ca3771237d99d87769199dad4250b5aad04acc/%E2%80%94Pngtree%E2%80%94ufo_7077225.png')
         await sleep(time)
         stop()
     }
     async function flyNorth(time){
         direction = "north"
-        let shipElement = alienShip('https://raw.githubusercontent.com/Rollsroyce95/milestone-project-/main/%E2%80%94Pngtree%E2%80%94ufo_7077225.png')
+      let shipElement = alienShip('https://github.com/Rollsroyce95/milestone-project-/blob/b1ca3771237d99d87769199dad4250b5aad04acc/%E2%80%94Pngtree%E2%80%94ufo_7077225.png')
         await sleep(time)
         stop()
     }
     function stop(){
         direction = null
-       let shipElement = alienShip('https://raw.githubusercontent.com/Rollsroyce95/milestone-project-/main/%E2%80%94Pngtree%E2%80%94ufo_7077225.png')
+  let shipElement = alienShip('https://github.com/Rollsroyce95/milestone-project-/blob/b1ca3771237d99d87769199dad4250b5aad04acc/%E2%80%94Pngtree%E2%80%94ufo_7077225.png')
     }
 
     return{
