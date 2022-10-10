@@ -13,7 +13,7 @@ function alienShip(url){
 }
 
 function npcShip(x,y){
-    let shipElement = alienShip('https://github.com/Rollsroyce95/milestone-project-/blob/main/vecteezy_ufo-spaceship-concept-clipart-design-illustration_9303159_122.png?raw=trueg')
+    let shipElement = alienShip('https://github.com/Rollsroyce95/milestone-project-/blob/bedeab1acd47fa48f2a28cdaacb4f877ca5caacf/x2ww_5npv_210520.jpg')
     shipElement.height = 350;
     shipElement.style.zIndex = 1;
     
@@ -39,19 +39,19 @@ function npcShip(x,y){
 
     async function flyEast(time){
         direction = "east"
-           let shipElement = alienShip('https://github.com/Rollsroyce95/milestone-project-/blob/main/vecteezy_ufo-spaceship-concept-clipart-design-illustration_9303159_122.png?raw=trueg')
+           let shipElement = alienShip('https://github.com/Rollsroyce95/milestone-project-/blob/bedeab1acd47fa48f2a28cdaacb4f877ca5caacf/x2ww_5npv_210520.jpg')
         await sleep(time)
         stop()
     }
     async function flyNorth(time){
         direction = "north"
-         let shipElement = alienShip('https://github.com/Rollsroyce95/milestone-project-/blob/main/vecteezy_ufo-spaceship-concept-clipart-design-illustration_9303159_122.png?raw=trueg')
+        let shipElement = alienShip('https://github.com/Rollsroyce95/milestone-project-/blob/bedeab1acd47fa48f2a28cdaacb4f877ca5caacf/x2ww_5npv_210520.jpg')
         await sleep(time)
         stop()
     }
     function stop(){
         direction = null
-           let shipElement = alienShip('https://github.com/Rollsroyce95/milestone-project-/blob/main/vecteezy_ufo-spaceship-concept-clipart-design-illustration_9303159_122.png?raw=trueg')
+          let shipElement = alienShip('https://github.com/Rollsroyce95/milestone-project-/blob/bedeab1acd47fa48f2a28cdaacb4f877ca5caacf/x2ww_5npv_210520.jpg')
     }
 
     return{
