@@ -66,7 +66,7 @@ function movePredator(){
     }
     
     if (direction === "northEast"){
-        y += 6;
+        y += 5;
         x += 4;
     }
     
