@@ -1,22 +1,23 @@
 
-const alienInMotion = npcAlien(-400,950)
+const alienInMotion = npcAlien(-615,730)
 
 function greyAlien(url){
     let grey = document.createElement('img')
     grey.src = url
+    grey.style.display = "block"
     grey.style.position = 'fixed'
     document.body.append(grey)
     return grey
 }
 
 function npcAlien(x,y){
-    let alienElement = greyAlien('https://raw.githubusercontent.com/Rollsroyce95/milestone-project-/main/alien_armor/armor__0035_fire_1.png')
+    let alienElement = greyAlien('character/2d-Game-Alien-Character-Free-Sprite/alien/PNG/alien_armor/armor__0035_fire_1.png')
     alienElement.height = 300;
-    alienElement.style.zIndex = -1;
-
-  
+    alienElement.style.zIndex = -1
+   
+    
     let direction = null;
-
+   
     function moveAlien (){
         if(direction === "west"){
             x -= 3
@@ -24,6 +25,9 @@ function npcAlien(x,y){
         if(direction === "north"){
         y += 3
         }
+        if(direction === "north2"){
+            y += 6
+            }
         if(direction === "south1"){
         y -= 5
         }
@@ -40,84 +44,102 @@ function npcAlien(x,y){
         y -= 3
         }  
         if(direction === "east"){
+            x += 8
+            }
+        if(direction === "east2"){
             x += 6
             }
         alienElement.style.left = x + "px"
         alienElement.style.bottom = y + "px"
-
     }
 
-    setInterval(moveAlien,1)
+    setInterval(moveAlien)
 
     async function flyWest(time){
         direction = "west"
-        alienElement.src = "https://raw.githubusercontent.com/Rollsroyce95/milestone-project-/main/alien_armor/armor__0035_fire_1.png"
+        alienElement.src = "character/2d-Game-Alien-Character-Free-Sprite/alien/PNG/alien_armor/armor__0035_fire_1.png"
         await sleep(time)
         stop()
     }
     async function flyEast(time){
         direction = "east"
-        alienElement.src = "https://raw.githubusercontent.com/Rollsroyce95/milestone-project-/main/alien_armor/armor__0035_fire_1.png"
+        alienElement.src = "character/2d-Game-Alien-Character-Free-Sprite/alien/PNG/alien_armor/armor__0035_fire_1.png"
+        await sleep(time)
+        stop()
+    }
+    async function flyEast2(time){
+        direction = "east2"
+        alienElement.src = "character/2d-Game-Alien-Character-Free-Sprite/alien/PNG/alien_armor/armor__0035_fire_1.png"
         await sleep(time)
         stop()
     }
     async function flySouth1(time){
         direction = "south1"
-        alienElement.src = "https://raw.githubusercontent.com/Rollsroyce95/milestone-project-/main/alien_armor/armor__0035_fire_1.png"
+        alienElement.src = "character/2d-Game-Alien-Character-Free-Sprite/alien/PNG/alien_armor/armor__0035_fire_1.png"
         alienElement.style.transform = "ScaleX(-1)"
         await sleep(time)
         stop()
     }
     async function flySouth2(time){
         direction = "south2"
-        alienElement.src = "https://raw.githubusercontent.com/Rollsroyce95/milestone-project-/main/alien_armor/armor__0036_fire_2.png"
+        alienElement.src = "character/2d-Game-Alien-Character-Free-Sprite/alien/PNG/alien_armor/armor__0036_fire_2.png"
         alienElement.style.transform = "ScaleX(-1)"
         await sleep(time)
         stop()
     }
     async function flySouth3(time){
         direction = "south3"
-        alienElement.src = "https://github.com/Rollsroyce95/milestone-project-/blob/main/alien_armor/armor__0037_fire_3.png"
+        alienElement.src = "character/2d-Game-Alien-Character-Free-Sprite/alien/PNG/alien_armor/armor__0037_fire_3.png"
         alienElement.style.transform = "ScaleX(-1)"
         await sleep(time)
         stop()
     }
     async function flySouth4(time){
         direction = "south4"
-        alienElement.src = "https://raw.githubusercontent.com/Rollsroyce95/milestone-project-/main/alien_armor/armor__0038_fire_4.png"
+        alienElement.src = "character/2d-Game-Alien-Character-Free-Sprite/alien/PNG/alien_armor/armor__0038_fire_4.png"
         alienElement.style.transform = "ScaleX(-1)"
         await sleep(time)
         stop()
     }
     async function flySouth5(time){
         direction = "south5"
-        alienElement.src = "https://raw.githubusercontent.com/Rollsroyce95/milestone-project-/main/alien_armor/armor__0039_fire_5.png"
+        alienElement.src = "character/2d-Game-Alien-Character-Free-Sprite/alien/PNG/alien_armor/armor__0039_fire_5.png"
         alienElement.style.transform = "ScaleX(-1)"
         await sleep(time)
         stop()
     }
     async function flyNorth(time){
         direction = "north"
-        alienElement.src = "https://raw.githubusercontent.com/Rollsroyce95/milestone-project-/main/alien_armor/armor__0035_fire_1.png"
+        alienElement.src = "character/2d-Game-Alien-Character-Free-Sprite/alien/PNG/alien_armor/armor__0035_fire_1.png"
+        alienElement.style.transform = "ScaleX(1)"
+        await sleep(time)
+        stop()
+    }
+    async function flyNorth2(time){
+        direction = "north2"
+        alienElement.src = "character/2d-Game-Alien-Character-Free-Sprite/alien/PNG/alien_armor/armor__0035_fire_1.png"
         alienElement.style.transform = "ScaleX(1)"
         await sleep(time)
         stop()
     }
     function stop(){
         direction = null
-        alienElement.src = "https://raw.githubusercontent.com/Rollsroyce95/milestone-project-/main/alien_armor/armor__0039_fire_5.png"
+        alienElement.src = "character/2d-Game-Alien-Character-Free-Sprite/alien/PNG/alien_armor/armor__0039_fire_5.png"
+       
     }
 
     return{
         alienElement:alienElement,
         flyWest:flyWest,
         flyEast:flyEast,
+        flyEast2:flyEast2,
         flySouth1:flySouth1,
         flySouth2:flySouth2,
         flySouth3:flySouth3,
         flySouth4:flySouth4,
         flySouth5:flySouth5,
         flyNorth:flyNorth,
+        flyNorth2:flyNorth2,
         stop:stop,
     }
 }
@@ -128,11 +150,11 @@ function sleep(time){
 }
 
 async function readyAlienOne(){
-    await alienInMotion.flyEast(2200);
-    await alienInMotion.flySouth1(445);
-    await alienInMotion.flySouth2(50);
-    await alienInMotion.flySouth3(50);
-    await alienInMotion.flySouth4(50);
-    await alienInMotion.flySouth5(50);
+    await alienInMotion.flyEast(1050);
+    await alienInMotion.flySouth1(100);
+    await alienInMotion.flySouth2(110);
+    await alienInMotion.flySouth3(120);
+    await alienInMotion.flySouth4(120);
+    await alienInMotion.flySouth5(120);
 }
     readyAlienOne()
