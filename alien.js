@@ -1,11 +1,9 @@
 
-const alienInMotion = npcAlien(-615,730)
+const alienInMotion = npcAlien(-590,780)
 
 function greyAlien(url){
     let grey = document.createElement('img')
     grey.src = url
-    grey.style.display = "block"
-    grey.style.position = 'fixed'
     document.body.append(grey)
     return grey
 }
@@ -14,6 +12,8 @@ function npcAlien(x,y){
     let alienElement = greyAlien('https://raw.githubusercontent.com/Rollsroyce95/milestone-project-/main/alien_armor/armor__0035_fire_1.png')
     alienElement.height = 300;
     alienElement.style.zIndex = -1
+    alienElement.style.display = 'block'
+    alienElement.style.position = "relative"
    
     
     let direction = null;
@@ -150,8 +150,8 @@ function sleep(time){
 }
 
 async function readyAlienOne(){
-    await alienInMotion.flyEast(1400);
-    await alienInMotion.flySouth1(100);
+    await alienInMotion.flyEast(1050);
+    await alienInMotion.flySouth1(65);
     await alienInMotion.flySouth2(110);
     await alienInMotion.flySouth3(120);
     await alienInMotion.flySouth4(120);
