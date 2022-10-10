@@ -1,4 +1,4 @@
-shipInMotion = npcShip(-900,180)
+shipInMotion = npcShip(-900,0)
 
 
 function alienShip(url){
@@ -65,7 +65,7 @@ function sleep(time){
 }
 
 async function readyShipOne(){
-    await shipInMotion.flyEast(1050)
+    await shipInMotion.flyEast(1400)
 
 }
 
