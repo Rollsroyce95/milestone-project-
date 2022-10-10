@@ -8,7 +8,7 @@ function alienShip(url){
     let ship = document.createElement('img')
     ship.src = url
    
-    ship.style.position = 'absolute'
+    ship.style.position = 'fixed'
     document.body.append(ship)
     return ship
 }
