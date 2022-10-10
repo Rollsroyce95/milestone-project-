@@ -188,7 +188,7 @@ function submit5(){
       submitQ5.style.display ="none";
 
          setTimeout(async function readyPredatorOne()
-            {await predatorInMotion.moveSouth (460);},1000);
+            {await predatorInMotion.moveSouth (400);},1000);
 
          setTimeout(async function readyAlienOne()
             {await alienInMotion.flyNorth (670);},0);
