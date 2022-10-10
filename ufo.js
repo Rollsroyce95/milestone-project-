@@ -12,8 +12,8 @@ function alienShip(url){
 
 function npcShip(x,y){
     let shipElement = alienShip('https://raw.githubusercontent.com/Rollsroyce95/milestone-project-/main/vecteezy_ufo-spaceship-concept-clipart-design-illustration_9356452_47.png')
-    shipElement.height = 50;
-    shipElement.width = 50;
+    shipElement.height = 350;
+    shipElement.width = 400;
     shipElement.style.zIndex = 1;
     
    
