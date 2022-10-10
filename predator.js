@@ -1,9 +1,8 @@
-const predatorInMotion = npcPredator(-300,225)
+const predatorInMotion = npcPredator(-300,780)
 
 function predatorBegins(url){
     let prey = document.createElement('img')
     prey.src = url
-    prey.style.position = 'fixed'
     document.body.append(prey)
     return prey
 }
@@ -12,6 +11,8 @@ function npcPredator(x,y){
     let predatorElement = predatorBegins('https://raw.githubusercontent.com/Rollsroyce95/milestone-project-/main/alien_predator_mask/predatormask__0001_idle_2.png')
     predatorElement.height = 250;
     predatorElement.style.zIndex = 0;
+        predatorElement.style.display = 'block'
+        predatorElement.style.position = "relative"
 
     let direction = null;
 
