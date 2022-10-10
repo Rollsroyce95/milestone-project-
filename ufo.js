@@ -14,7 +14,7 @@ function alienShip(url){
 }
 
 function npcShip(x,y){
-    let shipElement = alienShip('https://github.com/Rollsroyce95/milestone-project-/blob/f91f5b2ae652f0a6c5a4541794a99de4a8f3e74f/%E2%80%94Pngtree%E2%80%94ufo_7077225.png')
+    let shipElement = alienShip(''https://raw.githubusercontent.com/Rollsroyce95/milestone-project-/')
     shipElement.height = 800;
     shipElement.style.zIndex = 1;
     
