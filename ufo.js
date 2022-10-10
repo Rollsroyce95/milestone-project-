@@ -1,4 +1,4 @@
-shipInMotion = npcShip(-900,400)
+shipInMotion = npcShip(-900,730)
 
 
 function alienShip(url){
