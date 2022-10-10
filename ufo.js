@@ -65,7 +65,7 @@ function sleep(time){
 }
 
 async function readyShipOne(){
-    await shipInMotion.flyEast(1200)
+    await shipInMotion.flyEast(1150)
 
 }
 
