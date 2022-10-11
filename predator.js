@@ -225,6 +225,7 @@ async function readyPredatorOne(){
     await predatorInMotion.moveEast3(100)
     await predatorInMotion.moveEast4(100)
     await predatorInMotion.moveEast5(100)
+     await predatorInMotion.moveEast6(100)
     await predatorInMotion.moveNorthEast(400)
  
 }
